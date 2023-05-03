@@ -1,0 +1,540 @@
+@font-face {
+    font-family: 'fuentLogo';
+    src: url('../acces/letras/logoFuent.ttf');
+}
+@font-face {
+    font-family: 'Titulomedio';
+    src: url('../acces/letras/Titulomedio.otf');
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#3B3355;
+    font-family: Arial, Helvetica, sans-serif;
+    
+   
+}
+/*INICIO HEADER*/
+header{
+    height: 100%;
+   
+}
+.container_header{
+    max-width: 900px/*para qe quede en el medio*/;
+    height: 100%;
+    margin: auto;
+    padding: 40px;
+
+    display: flex;/*para que los elementos se ponga uno alado del otro*/
+    justify-content: space-between;/*para que los elementos se distribuyan a lo largo del header*/
+    align-items: center;/*para que todo se aline horizontal*/
+}
+.caja_logo{
+ 
+
+    display: flex;
+    justify-items: center;
+
+}
+.caja_logo img{
+width: 50px;
+}
+.caja_logo p{
+    color: #F4F3EE;
+    text-shadow: 1px 2px 2px 
+    #a5aeac;
+   margin-top: 15px;
+   margin-right: 10px;
+   font-family: fuentLogo;
+   font-size: 20px;
+   font-weight:500;
+
+}
+.caja_menu{
+
+    width: 50%;
+    
+}
+
+.caja_menu nav ul{
+    display: flex;/*con esto lo ponemos lineal*/
+    margin: 10px;
+    justify-content: space-between;/*me los separa*/
+}
+.caja_menu nav ul li{
+   list-style: none;
+   
+}
+.caja_menu nav ul a{
+    position: relative;
+    text-decoration: none;
+    color: #F4F3EE;
+    text-transform: uppercase;
+   
+ }
+ .caja_menu nav ul a::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #B8B8FF;
+  transition: .7s;
+  
+ }
+
+ .caja_menu nav ul a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background: #B8B8FF;
+    transition: .7s;
+    
+   }
+  
+
+ .caja_menu nav ul a:hover{
+    color:#B8B8FF;
+    
+ }
+ .caja_menu nav ul:hover a::before{
+    width: 50%;
+ }
+ .caja_menu nav ul:hover a::after{
+    width: 50%;
+ }
+
+
+ /*FIN HEADER*/
+
+
+
+ /***SECCION DE 1********/
+ .seccion_1{
+    display: flex;/*uno alado del otro*/
+    
+    max-width: 980px/*para qe quede en el medio*/;
+    margin: auto;
+    height: 550px;
+ }
+
+ .caja_texto1{
+  
+  
+    width: 50%;
+    height: 450px;
+    margin: 20px;
+    justify-items: center;
+    
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    cursor: default;
+    transition: all 400ms ease;
+ }
+ .caja_texto1:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2%);/*con esta linea de codigo le decimos que se translade hacia arriba un 3%*/
+ }   
+ .hache_1{
+    color:#F4F3EE;
+    font-family: fuentLogo;
+    text-shadow: 1px 1px 1px 
+    #a5aeac;
+    margin: 10px;
+    margin-top: 40px;
+    font-size: 50px;
+   font-weight: 500;
+ }
+ .parrafo_1{
+    color: #F4F3EE;
+    font-family: sans-serif;
+    margin: 40px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: justify;
+    letter-spacing: 2px;
+ }
+
+ .button{
+    
+    padding: 9px;
+    transition: .5s;
+    border: 2px solid #5907a0; /* Green */
+    border-radius: 10px;
+    cursor: pointer;
+    background:rgb(30, 6, 30); 
+    background:  rgb(255, 255, 255);
+    ;
+    
+ }
+
+ .caja_texto1 a{
+    text-decoration: none;
+    font-weight: 200;
+    
+ }
+.button:hover{
+    background: #94c5f1;
+    background-image: -webkit-linear-gradient(top, #ec434e, #430b4b);
+    background-image: -moz-linear-gradient(top, #94c5f1, #ec434e);
+    background-image: -ms-linear-gradient(top, #94c5f1, #340b4b);
+    background-image: -o-linear-gradient(top, #ec434e, #ec434e);
+    background-image: linear-gradient(to bottom, #94c5f1, #430b4b);
+    text-decoration: none;
+    color: #f5f5f5;
+   
+}   
+ .caja_foto{
+ background: rgb(240, 244, 236);
+ width: 50%;
+ height: 450px;
+ margin: 20px;
+ justify-content: center;
+ border-radius: 30px ;
+}
+.imagen{
+    width: 100%;
+    height: 450px;
+    border-radius: 30px;
+
+}
+
+/*******SECCIONI DOS******/
+/*******GALERIA******/
+
+.seccion_2{/*elemento padre*/
+   
+    width: 100%;
+    height: 600px;
+
+    
+}
+.caja_texto2{
+    height: 50px;
+    width: 20%;
+   
+    margin-right: 20px;
+    margin: auto;/*me centro la caja*/
+    padding: 10px;
+    justify-content: space-between;
+    
+}
+
+.hache_2{
+    font-family: Titulomedio;
+    text-align: center;
+    color: #B8B8FF;
+    margin: 10px;
+    animation-duration: 3s;
+    animation-name: slidein;
+    
+}
+
+@keyframes slidein {
+    from {
+      margin-left:100%;
+      width:300%
+    }
+  
+    to {
+     margin-left:0%;
+     width:100%;
+   }
+  }
+.contenedor_caja{/*CAJA PADRE y tambien element hij*/
+    background: #faf6f9;
+    width: 30%;
+    height: 350px;
+    margin: 15px;
+    margin-top: 70px;/*me bajo las cajas*/
+    
+   display: inline-block;
+   border-radius: 5px;
+   box-shadow: 0px 1px 10px rgba(95, 10, 143, 0.3);
+   cursor: default;
+   transition: all 300ms ease;
+
+}
+.contenedor_caja:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2%);/*con esta linea de codigo le decimos que se translade hacia arriba un 3%*/
+}
+.caja_card{
+    background:#aaa7a9;
+    height: 90%;
+    margin: 25px;
+    width: 330px;
+    padding: 10px;
+   justify-content: center;
+   text-align: center;
+
+
+}
+
+.img_card{
+    object-fit: cover;
+    width: 50%;
+    height: 100px;
+    background: rgb(253, 253, 253);
+
+      
+  }
+  .hache2_card{
+color: #faf6f9;
+margin-top: 5px;
+padding: 10px;
+font-family: Arial, Helvetica, sans-serif;
+  }
+  
+
+  .parrafo_card{
+    color: #f5f5f5;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .boton3{
+    text-decoration: none;
+  }
+ 
+/*********SECCION-3*****/
+/**********HABILIDADES*/
+
+  .seccion_3{/*elemento padre*/
+   
+    width: 100%;
+    height: 600px;  
+   
+}
+
+.caja_padre{
+width: 90%;
+height: 400px;
+
+margin: 20px;
+margin-top: 70px;
+margin-left: 60px;
+display: flex;
+justify-content: center;
+
+
+}
+
+.caja_iconos{
+   display: flex;
+  flex-direction: column;
+   text-align: center;
+   
+    margin: 20px;
+    height: 350px;
+    width:50px ;
+    
+}
+
+.fa-solid{
+margin: 10px;
+padding: 20px;
+justify-items: center;
+}
+.caja_texto3{
+
+height: 350px;
+width: 350px;
+margin: 20px;
+
+
+}
+
+.footer_parraf{
+color:#F4F3EE;
+font-weight: 600;
+margin: 10px;
+padding: 20px;
+justify-items: center;
+}
+.caja_vector{
+  
+    margin:20px ;
+    height: 350px;
+
+}
+
+.vector{
+    width: 350px;
+    height: 350px;
+    color:#F4F3EE;
+}
+
+
+/******SECCION 4 FOOTERS*/
+.contenedor_footer{
+    display: flex;
+    
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(270deg, #3b3355, #b8b8ff, #b8b8ff, #3b3355, #3b3355, #a51c5f, #b8b8ff, #b8b8ff, #3b3355);
+    background-size: 1800% 1800%;
+
+    -webkit-animation: AnimationName 55s ease infinite;
+    -moz-animation: AnimationName 55s ease infinite;
+    animation: AnimationName 55s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+/*#img_parallax{
+width: 350px;
+height: 300px;
+margin-top: 80px;
+position: relative;
+object-fit: cover;
+
+}*/
+.astro-2{
+    
+    top:52%;
+    position:relative;
+    animation-name: astro2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes astro2{
+    0%{
+     top:60%;
+    }
+    50%{
+     top:5% /*abaja*/
+    }
+    100%{
+     top:60%;
+    }
+}
+.img_footer{
+
+   width: 250px;
+   height: 300px;
+   object-fit: cover; 
+}
+
+
+
+.caja_footer{/*PADRE CONTIENE IMG-ICONOS-CONTACTO*/
+    width: 90%;
+    height: 200px;
+  
+    margin: 20px;
+    margin-top: 30px;
+    margin-left: 60px;
+    justify-content: center; 
+    display: flex;
+   justify-content: flex-end
+}
+
+.caja_redes{
+
+    margin-right: 90px;
+
+  
+}
+.redes_texto{
+    color: #ffff;
+ 
+}
+.redes_textofo{
+   
+    font-weight: 500;
+    font-family: 'fuentLogo';
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+   
+    
+}
+
+.redes_fo{
+   
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+
+    }
+.redes_fo a{
+    text-decoration: none;
+    transition: all .4s ease-in-out;
+}
+
+.redes_fo a:hover{
+    transform: scale(1.2);
+}
+
+.fa-brands{/*iconos*/
+margin: 10px;
+padding: 20px;
+ 
+}
+
+.caja_contact{
+    display: flex;
+    flex-direction: column;    
+}
+
+.text_contact{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+.pa_contac{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #faf7f7;
+    text-align: center;
+    margin-top: 10px;
+  
+}
+
+@media screen and (max-whidth:1200px){
+    
+}
+
+
+
+
+
+
+
+
+
+
+    
+
